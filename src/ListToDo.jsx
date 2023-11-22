@@ -8,7 +8,7 @@ const ListToDo = function (){
         <ul>
             {todos.map(function(todo) {
                 return (
-                    <li>
+                    <li key={todo}>
                         <input type="checkbox" /> {todo}
                     </li>
                 );
