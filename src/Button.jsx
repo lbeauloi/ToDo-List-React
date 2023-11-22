@@ -1,6 +1,6 @@
 const Button = function () {
     return(
-        <button class="myButton">Add Todo</button>
+        <button className="myButton">Add Todo</button>
     )
 }
 export default Button

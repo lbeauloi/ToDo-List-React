@@ -1,13 +1,20 @@
+import React, {useState} from 'react';
 const ListToDo = function (){
+    const initialTodos = ["Buy Milk", "Learn React","Buy More Milk"];
+    const [todos, setTodos]= useState(initialTodos)
     return (
         <>
         <h2>Todos</h2>
         <ul>
-            <li>Buy Milk</li>
-            <li>Learn React</li>
-            <li>Buy More Milk</li>
+            {todos.map(function(todo) {
+                return (
+                    <li>
+                        <input type="checkbox" /> {todo}
+                    </li>
+                );
+            })}
         </ul>
         </>
-    );
+    ); 
 }
 export default ListToDo
