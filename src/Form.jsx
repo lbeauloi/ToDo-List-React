@@ -15,7 +15,7 @@ export default function Form({ addTodo }) {
   return (
     <div>
       <input ref={inputRef} type="text" placeholder="Write a new todo" />
-      <button onClick={clickHandler}>Add todo</button>
+      <button className="addBtn" onClick={clickHandler}>Add todo</button>
     </div>
   );
 }

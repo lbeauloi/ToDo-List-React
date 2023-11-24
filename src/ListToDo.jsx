@@ -15,7 +15,7 @@ const ListToDo = function ({ todos, setTodos }) {
 
   return (
     <>
-      <h2>Todos</h2>
+      <h2>Todos :</h2>
       <ul>
         {todos.map(function (todo) {
           return (
@@ -26,7 +26,7 @@ const ListToDo = function ({ todos, setTodos }) {
                 onChange={() => handleToggle(todo.id)}
               />{" "}
               {todo.text}
-              <button onClick={() => handleDelete(todo.id)}>Delete</button>
+              <button className="deleteBtn" onClick={() => handleDelete(todo.id)}>Delete</button>
             </li>
           );
         })}

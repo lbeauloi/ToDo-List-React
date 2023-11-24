@@ -4,11 +4,7 @@ import Form from './Form';
 import ListToDo from './ListToDo';
 
 function App() {
-  const initialTodos = [
-    { id: 1, text: 'Buy Milk', completed: false },
-    { id: 2, text: 'Learn React', completed: false },
-    { id: 3, text: 'Buy More Milk', completed: false },
-  ];
+  const initialTodos = [];
 
   const [todos, setTodos] = useState(initialTodos);
 
