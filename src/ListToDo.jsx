@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const ListToDo = function () {
-  const initialTodos = [
-    { id: 1, text: "Buy Milk", completed: false },
-    { id: 2, text: "Learn React", completed: false },
-    { id: 3, text: "Buy More Milk", completed: false }
-  ];
-
-  const [todos, setTodos] = useState(initialTodos);
-
+const ListToDo = function ({ todos, setTodos }) {
   const handleToggle = (id) => {
-    // On crée une nouvelle liste de todos en modifiant l'état de la tâche avec l'ID correspondant
-    const updatedTodos = todos.map(todo =>
+    const updatedTodos = todos.map((todo) =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
     );
+    setTodos(updatedTodos);
+  };
 
+  const handleDelete = (id) => {
+    const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
   };
 
@@ -31,6 +26,7 @@ const ListToDo = function () {
                 onChange={() => handleToggle(todo.id)}
               />{" "}
               {todo.text}
+              <button onClick={() => handleDelete(todo.id)}>Delete</button>
             </li>
           );
         })}
@@ -40,3 +36,5 @@ const ListToDo = function () {
 };
 
 export default ListToDo;
+
+
