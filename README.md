@@ -14,8 +14,8 @@
 ## Must-Have's
 
 * Read this documentation on the basics
-* Create a React application and run it locally on your browser (hint-hint: start here)
+* Create a React application and run it locally on your browser
 * Publish the source code on your GitHub repository
-* Build a todo app with React.js (Check out this useful instructions )
-* Save your todos, even after starting the browser again
+* Build a todo app with React.js
+* Save your todos, even after starting the browser again (localStorage)
 * Deploy the project on a live server
