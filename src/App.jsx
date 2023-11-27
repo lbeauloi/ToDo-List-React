@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Form from './Form';
 import ListToDo from './ListToDo';
 
+const LSKEY = 'MyToDoApp'; // lskey = Local Storage Key
 function App() {
-  const initialTodos = [];
+  const initialTodos = JSON.parse(localStorage.getItem(LSKEY + '.todos')) || []; // on doit changer notre initialTodos, avant on iniit avec un arrya vide, donc fatelment le lcoal storage allait se reste a chaque fois
 
   const [todos, setTodos] = useState(initialTodos);
 
@@ -17,6 +18,11 @@ function App() {
 
     setTodos([...todos, newTodo]);
   };
+
+  // Save todos to localStorage
+  useEffect(() => {
+    window.localStorage.setItem(LSKEY + '.todos', JSON.stringify(todos));
+  }, [todos]);
 
   return (
     <div className="container">
@@ -36,6 +42,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
