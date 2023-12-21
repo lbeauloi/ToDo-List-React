@@ -12,6 +12,6 @@ This is the first project in React. The goal is to discover the language by crea
 
 
 ## Project Link 
-[ToDO List](https://lbeauloi.github.io/Hackers-Poulette/)
+[ToDo List](https://lbeauloi.github.io/ToDo-List-React/)
 ## Badges
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
