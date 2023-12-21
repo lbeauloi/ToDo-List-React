@@ -1,21 +1,17 @@
-# intro-react (ToDo List)
-* Mode: solo
-* Type of Challenge: learning
-* Duration: 4+1 days
-* Deployment: Github pages or Netlify
 
-## Learning Objectives
+# ToDo App in React
+This is the first project in React. The goal is to discover the language by creating a todo list. The following concepts are used:
+- “think in React”
+- basic hooks for managing state and reactivity
+- components
+## Authors
 
-* Be able to create a new React application
-* Be able to "think in React"
-* Be able to use basic hooks for managing state and reactivity
-* Be able to organize your app in components
+[@LucasBeauloi](https://github.com/lbeauloi) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-beauloi/)
 
-## Must-Have's
 
-* Read this documentation on the basics
-* Create a React application and run it locally on your browser
-* Publish the source code on your GitHub repository
-* Build a todo app with React.js
-* Save your todos, even after starting the browser again (localStorage)
-* Deploy the project on a live server
+
+
+## Project Link 
+[ToDO List](https://lbeauloi.github.io/Hackers-Poulette/)
+## Badges
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
